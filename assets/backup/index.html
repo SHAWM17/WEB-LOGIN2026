@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Logic Insight 2026 - Reka Cipta Acarita: Menggali Tutur Lama dan Meresapi Nilai Makna. Program UKM Pendidikan dan Penalaran POLINEMA."
+    />
+    <title>Logic Insight 2026 - Reka Cipta Acarita</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo ukm pp.webp"
+      type="image/x-icon"
+    />
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ==========================================
+     1. NAVBAR UTAMA WITH DROPDOWN & HAMBURGER (CSS HACK)
+=========================================== -->
+    <header class="navbar">
+      <div class="logo-container">
+        <a href="#beranda">
+          <img
+            src="assets/img/logo ukm pp.webp"
+            alt="Logo UKM PP POLINEMA"
+            class="logo-img"
+          />
+        </a>
+      </div>
+
+      <!-- CSS Hack: Checkbox Toggle untuk Hamburger Mobile -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <!-- Ikon Hamburger Button -->
+      <label
+        for="menu-toggle"
+        class="hamburger-btn"
+        aria-label="Toggle Navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigasi Utama -->
+      <nav class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#beranda" class="active">Beranda</a></li>
+
+          <!-- Dropdown RECA dengan CSS Toggle khusus Mobile -->
+          <li class="dropdown">
+            <!-- Checkbox hack khusus untuk toggle dropdown di mobile -->
+            <input type="checkbox" id="reca-toggle" class="dropdown-toggle" />
+
+            <label for="reca-toggle" class="dropdown-btn">
+              RECA <span class="arrow">▾</span>
+            </label>
+
+            <ul class="dropdown-menu">
+              <li><a href="#kaleidoskop">Kaleidoskop Kisah</a></li>
+              <li><a href="#lemari-karya">Lemari Karya</a></li>
+              <li><a href="#game">Game</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#profil-ukm">Profil UKMPP</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ==========================================
+     2. HERO BANNER / BERANDA
+    =========================================== -->
+      <section id="beranda" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="badge">RECA: Reka Cipta Acarita</span>
+            <h1>Menggali Tutur Lama dan Meresapi Nilai Makna</h1>
+            <p class="description">
+              Melalui perpaduan narasi dan visual modern folklore, mari
+              menghidupkan kembali cerita lisan dan meresapi nilai-nilai lokal
+              Nusantara.
+            </p>
+          </div>
+
+          <!-- Wrapper dengan ornamen visual & efek glow background -->
+          <div class="hero-thumbnail-wrapper">
+            <div class="hero-glow-effect"></div>
+            <div class="hero-thumbnail">
+              <img
+                src="assets/img/desain nenek bercerita.webp"
+                alt="Thumbnail RECA - Nenek Bercerita"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             3. SEGMEN RECA
+        =========================================== -->
+      <section id="reca" class="reca-section">
+        <div class="container text-center">
+          <h2>RECA (Reka Cipta Acarita)</h2>
+          <div class="visual-container">
+            <img
+              src="assets/img/desain-reca.webp"
+              alt="Visual Segmen RECA"
+              class="reca-banner"
+            />
+          </div>
+          <p class="content-text max-w-800">
+            Melalui perpaduan narasi dan visual modern folklore yang mengikat,
+            platform ini menyoroti potret nyata permasalahan di sekitar, seperti
+            lunturnya tradisi penuturan lisan dan pergeseran nilai lokal.
+          </p>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             4. KALEIDOSKOP KISAH
+        =========================================== -->
+      <section id="kaleidoskop" class="kaleidoskop-section">
+        <div class="container kaleidoskop-grid">
+          <div class="kaleidoskop-visual">
+            <img
+              src="assets/img/PDD_KALEIDOSKOP KISAH (1).webp"
+              alt="Ilustrasi Candra Kirana (Keong Mas)"
+            />
+          </div>
+          <div class="kaleidoskop-content">
+            <h2>Kaleidoskop Kisah</h2>
+            <p class="intro-quote">
+              "Masa lalu menitip kisah, generasi kita yang memberi arah. Klik di
+              bawah untuk mengabadikannya!"
+            </p>
+            <blockquote class="story-quote">
+              "Aku pernah terperangkap dalam cangkang keemasan, namun cangkang
+              yang kini mengurung kami adalah: dilupakan. Melalui jemarimu hari
+              ini, patahkan kutukan dilupakan itu, tuliskan kembali kisah kami."
+            </blockquote>
+            <div class="action-buttons">
+              <a
+                href="https://drive.google.com/file/d/1F1ihapqJEPPCPwsUVwcAuiLLHuqU004B/view?usp=sharing"
+                class="btn-action"
+                target="_blank"
+                >Panduan Lomba</a
+              >
+              <a
+                href="https://drive.google.com/drive/folders/1RZ9QFH1QMzGjAM49fv26Gj0HL5z6bxxg"
+                class="btn-action highlight"
+                target="_blank"
+                >Unggah Karya</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+     7. LEMARI KARYA
+=========================================== -->
+      <section id="lemari-karya" class="lemari-karya-section">
+        <div class="container text-center">
+          <h2>LEMARI KARYA</h2>
+          <p class="section-tagline">
+            "Kumpulan Karya, Tutur Kisah, dan Apresiasi Pemenang Logic Insight
+            2026"
+          </p>
+
+          <!-- MUSTIKA ACARITA (GALERI JAWARA) -->
+          <div class="mustika-acarita">
+            <h3>MUSTIKA ACARITA</h3>
+            <p class="subtitle">"Para Penjaga Kisah Nusantara"</p>
+
+            <!-- 3 Finalis Utama (Juara 1 - 3) dengan Preview Video -->
+            <div class="finalis-list">
+              <!-- Juara 1 -->
+              <div class="finalis-card">
+                <div class="video-preview" onclick="bukaPdfCerpen('cerpen-01')">
+                  <img
+                    src="assets/img/header-reca.webp"
+                    alt="Video Terbaik 1"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="finalis-info">
+                  <h4 id="title-cerpen-01">Judul Cerpen Finalis 1</h4>
+                  <p class="author" id="author-cerpen-01">Nama Penulis / Tim</p>
+                  <button class="btn-read" onclick="bukaPdfCerpen('cerpen-01')">
+                    Baca Naskah
+                  </button>
+                </div>
+              </div>
+
+              <!-- Juara 2 -->
+              <div class="finalis-card reverse">
+                <div class="finalis-info">
+                  <h4 id="title-cerpen-02">Judul Cerpen Finalis 2</h4>
+                  <p class="author" id="author-cerpen-02">Nama Penulis / Tim</p>
+                  <button class="btn-read" onclick="bukaPdfCerpen('cerpen-02')">
+                    Baca Naskah
+                  </button>
+                </div>
+                <div class="video-preview" onclick="bukaPdfCerpen('cerpen-02')">
+                  <img
+                    src="assets/img/header-reca.webp"
+                    alt="Video Terbaik 2"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+              </div>
+
+              <!-- Juara 3 -->
+              <div class="finalis-card">
+                <div class="video-preview" onclick="bukaPdfCerpen('cerpen-03')">
+                  <img
+                    src="assets/img/header-reca.webp"
+                    alt="Video Terbaik 3"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="finalis-info">
+                  <h4 id="title-cerpen-03">Judul Cerpen Finalis 3</h4>
+                  <p class="author" id="author-cerpen-03">Nama Penulis / Tim</p>
+                  <button class="btn-read" onclick="bukaPdfCerpen('cerpen-03')">
+                    Baca Naskah
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 Finalis Lainnya (Sesuai Gambar Wireframe Bawah Juara 3) -->
+            <div class="finalis-sub-grid">
+              <div class="finalis-sub-card">
+                <h4 id="title-cerpen-04">Judul Cerpen Finalis 4</h4>
+                <p class="author" id="author-cerpen-04">"Nama tim/penulis"</p>
+                <button class="btn-read" onclick="bukaPdfCerpen('cerpen-04')">
+                  Baca Naskah
+                </button>
+              </div>
+
+              <div class="finalis-sub-card">
+                <h4 id="title-cerpen-05">Judul Cerpen Finalis 5</h4>
+                <p class="author" id="author-cerpen-05">"Nama tim/penulis"</p>
+                <button class="btn-read" onclick="bukaPdfCerpen('cerpen-05')">
+                  Baca Naskah
+                </button>
+              </div>
+
+              <div class="finalis-sub-card">
+                <h4 id="title-cerpen-06">Judul Cerpen Finalis 6</h4>
+                <p class="author" id="author-cerpen-06">"Nama tim/penulis"</p>
+                <button class="btn-read" onclick="bukaPdfCerpen('cerpen-06')">
+                  Baca Naskah
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- LOKA KARYA (KARYA PESERTA LAINNYA WITH PAGINATION) -->
+          <div class="loka-karya-section">
+            <h3>LOKA KARYA</h3>
+            <p>"Kumpulan Seluruh Naskah Cerpen Peserta Logic Insight 2026"</p>
+
+            <!-- Tombol Buka / Tutup Daftar Karya -->
+            <button class="btn-primary" onclick="toggleLokaKaryaGrid()">
+              Baca Seluruh Karya
+            </button>
+
+            <!-- Container Karya & Navigasi Halaman -->
+            <div id="lokaKaryaContainer" class="loka-karya-container hidden">
+              <!-- Grid Tempat Menampilkan 3 Karya Per Halaman -->
+              <div id="cerpenGrid" class="cerpen-grid">
+                <!-- Disuntikkan via JavaScript -->
+              </div>
+
+              <!-- Tombol Paginasi (1, 2, 3, dst.) -->
+              <div id="paginationNav" class="pagination-container">
+                <!-- Disuntikkan via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+     MODAL POP-UP PDF & VIDEO VIEWER
+    =========================================== -->
+      <div id="pdfModal" class="modal-overlay hidden" aria-hidden="true">
+        <div class="modal-content">
+          <!-- Header Modal -->
+          <div class="modal-header">
+            <div class="modal-title-box">
+              <span id="modalKategori" class="modal-badge">Kategori</span>
+              <h3 id="modalJudul">Judul Cerpen</h3>
+              <p id="modalPenulis" class="modal-author">Oleh: Penulis</p>
+            </div>
+            <button
+              class="btn-close"
+              onclick="closePdfModal()"
+              aria-label="Tutup Viewer"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!-- Area Video Embed (Otomatis tampil jika ada video / Finalis 1-3) -->
+          <div id="modalVideoWrapper" class="modal-video-wrapper hidden">
+            <h4>🎬 Video Unjuk Karya / Pembacaan Finalis</h4>
+            <div class="video-container">
+              <iframe
+                id="modalVideoIframe"
+                src=""
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Area PDF Viewer -->
+          <div class="modal-pdf-wrapper">
+            <h4>📜 Naskah Cerpen Lengkap</h4>
+            <div class="pdf-container">
+              <iframe id="modalPdfFrame" src="" type="application/pdf"></iframe>
+            </div>
+          </div>
+
+          <!-- Footer Modal -->
+          <div class="modal-footer">
+            <button onclick="closePdfModal()" class="btn-secondary">
+              Tutup Naskah
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+             5. GAME: THE JOURNEY OF KIRANA
+        =========================================== -->
+      <section id="game" class="game-section">
+        <div class="container game-grid">
+          <div class="game-text">
+            <h2>THE JOURNEY OF KIRANA</h2>
+            <span class="sub-title">Awakening Forgotten Legends</span>
+            <p class="description">
+              Jelajahi petualangan interaktif dalam menghidupkan kembali legenda
+              Nusantara yang terlupakan melalui game "The Journey of Kirana".
+            </p>
+            <a
+              href="https://game-seven-taupe-73.vercel.app/"
+              class="btn-primary"
+              target="_blank"
+              >Mainkan Game</a
+            >
+          </div>
+          <div class="game-media">
+            <img
+              src="assets/img/THUMBNAIL GAME.webp"
+              alt="Thumbnail Game Kirana"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             6. PROFIL UKM PENDIDIKAN DAN PENALARAN
+        =========================================== -->
+      <section id="profil-ukmpp" class="profil-section">
+        <div class="container">
+          <div class="profil-header text-center">
+            <span class="tag">BHAKDAWIKA PURWA</span>
+            <h2>
+              Profil Resmi UKM Pendidikan dan Penalaran Politeknik Negeri Malang
+            </h2>
+          </div>
+
+          <div class="profil-about">
+            <h3>Apa Itu UKM PP?</h3>
+            <p>
+              Unit Kegiatan Mahasiswa Pendidikan dan Penalaran merupakan
+              organisasi yang menjadi wadah kegiatan kepenulisan dan penelitian
+              ilmiah yang mendukung pengembangan potensi mahasiswa di bidang
+              pengetahuan, teknologi dan potensi nalar mahasiswa.. Melalui
+              berbagai program kerja yang meliputi kegiatan kepenulisan, event
+              organizing, serta penerbitan karya ilmiah, para fungsionaris UKM
+              PP diharapkan untuk dapat mengembangkan pola piker kritis dan
+              logis, kemampuan problem solving, dan skill berorganisasi yang
+              dapat diterapkan di kehidupan sehari-hari, serta dapat menjadi
+              inspirasi bagi lingkungan mereka.
+            </p>
+          </div>
+
+          <div class="slogan-box text-center">
+            <h3>UKM PP Punya Slogan, Ya?</h3>
+
+            <p>
+              Di balik setiap gerakan UKM Pendidikan dan Penalaran Politeknik
+              Negeri Malang, tersimpan sebuah slogan yang menjadi landasan
+              filosofi kami: “BHAKDHAWIKA.”
+            </p>
+
+            <p>
+              Slogan ini bukan hanya sekadar rangkaian kata, melainkan sebuah
+              akronim yang merepresentasikan nilai-nilai luhur yang selalu
+              dipegang teguh oleh setiap anggotanya.
+            </p>
+
+            <p>
+              <strong>Bhakdhawika terdiri dari empat unsur utama:</strong>
+            </p>
+
+            <ol class="slogan-list text-left">
+              <li>
+                <strong>Bhaktya</strong><br />
+                Berarti <em>berbakti</em>. Setiap anggota UKM Pendidikan dan
+                Penalaran diharapkan selalu mengabdi dengan tulus kepada negara,
+                almamater, organisasi, agama, masyarakat, dan keluarga. Semangat
+                pengabdian inilah yang menjadi landasan sikap dalam setiap
+                langkah.
+              </li>
+              <li>
+                <strong>Dharma</strong><br />
+                Berarti <em>berbagi</em>. Anggota UKM Pendidikan dan Penalaran
+                berkewajiban untuk senantiasa berbagi ilmu pengetahuan,
+                pengalaman, maupun sumber daya dengan sesama. Nilai ini
+                menekankan pentingnya kebersamaan dan kontribusi tanpa pamrih
+                sebagai individu sosial.
+              </li>
+              <li>
+                <strong>Widagdha</strong><br />
+                Berarti <em>belajar</em>. Setiap anggota UKM Pendidikan dan
+                Penalaran wajib untuk terus menggali dan mengembangkan ilmu
+                pengetahuan, baik di bidang akademik maupun non-akademik. Dengan
+                semangat belajar yang tekun dan berkelanjutan, anggota dapat
+                menjadi pribadi yang kritis, inovatif, dan bermanfaat bagi
+                lingkungannya.
+              </li>
+              <li>
+                <strong>Karya</strong><br />
+                Berarti <em>bekerja</em>. Anggota UKM Pendidikan dan Penalaran
+                tidak hanya belajar, tetapi juga menerapkan ilmu yang dimiliki
+                melalui karya nyata. Karya menjadi wujud kontribusi yang dapat
+                memberikan manfaat bagi masyarakat, almamater, dan bangsa.
+              </li>
+            </ol>
+
+            <p>
+              Secara keseluruhan, Bhakdhawika adalah representasi dari aksi
+              nyata, yaitu berbakti, berbagi, belajar, dan berkarya demi
+              tercapainya tujuan bersama serta kebermanfaatan yang lebih luas.
+            </p>
+
+            <br />
+            <p class="slogan-yell">
+              <em
+                >"PP! Logis! PP! Logis PP! Logis! <br />
+                PP Logis! Bhakdawika."</em
+              >
+            </p>
+          </div>
+
+          <!-- Struktur Lakon / Organisasi Interaktif -->
+          <div class="lakon-section">
+            <h3 class="text-center">LAKON</h3>
+            <h3 class="text-center">(STRUKTUR ORGANISASI)</h3>
+
+            <!-- ==========================================
+          SEKSI BPH (BADAN PENGURUS HARIAN)
+          =========================================== -->
+            <div class="bph-section">
+              <div class="bph-card">
+                <div class="bph-photo-wrapper">
+                  <img
+                    src="assets/img/DOKUM-BIDANG/bph-sc.webp"
+                    alt="Foto Badan Pengurus Harian UKM PP"
+                    class="bph-img"
+                  />
+                </div>
+                <div class="bph-info">
+                  <h4>BADAN PENGURUS HARIAN (BPH)</h4>
+                  <blockquote class="bph-quote">
+                    "Menjadi pilar utama dalam mengoordinasikan, mengarahkan,
+                    dan memastikan seluruh roda organisasi UKM Pendidikan dan
+                    Penalaran berjalan selaras demi mewujudkan visi bersama."
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Filter Bidang (4 Kartu Bidang) -->
+            <div class="bidang-grid">
+              <button class="bidang-card active" onclick="pilihBidang(1)">
+                Bidang 1: Operasional Intern
+              </button>
+              <button class="bidang-card" onclick="pilihBidang(2)">
+                Bidang 2: Diskusi Dan Penalaran
+              </button>
+              <button class="bidang-card" onclick="pilihBidang(3)">
+                Bidang 3: Penelitian Dan Pengembangan Teknologi
+              </button>
+              <button class="bidang-card" onclick="pilihBidang(4)">
+                Bidang 4: Hubungan Masyarakat
+              </button>
+            </div>
+
+            <!-- Container Tampilan Detail Bidang -->
+            <div class="bidang-detail-container" id="bidangDetailView">
+              <!-- Header Judul Bidang -->
+              <h2 id="bidangTitle" class="bidang-detail-title">BIDANG 1</h2>
+
+              <!-- Bagian Atas: Foto Fungsionaris/Anggota & Deskripsi -->
+              <div class="bidang-top-section">
+                <div class="main-photo-wrapper">
+                  <img
+                    id="bidangMainImg"
+                    src="assets/img/DOKUM-BIDANG/bidang1-sc.webp"
+                    alt="Foto Anggota Bidang"
+                  />
+                </div>
+                <blockquote id="bidangDesc" class="bidang-quote">
+                  "Memfasilitasi dan mengembangkan iklim kepenulisan serta
+                  penelitian ilmiah bagi seluruh fungsionaris dan mahasiswa."
+                </blockquote>
+              </div>
+
+              <!-- Bagian Bawah: Galeri Program Kerja Expandable/Hover -->
+              <div class="proker-gallery-wrapper">
+                <div class="proker-gallery-header">
+                  <h3>PROGRAM KERJA</h3>
+                  <p id="bidangProkerSubtext">
+                    Berfokus pada pengembangan nalar, peningkatan kemampuan
+                    anggota, dan karya cipta.
+                  </p>
+                </div>
+
+                <!-- Grid Kartu Proker Interaktif -->
+                <div class="proker-expandable-grid" id="bidangProkerList">
+                  <!-- Item proker disuntikkan via JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prestasi-section text-center">
+            <h3>WIRAKRAMA REKSA</h3>
+            <p class="sub-text">Galeri Pencapaian & Prestasi UKM PP</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             8. LEAVE A REPLY (KOMENTAR)
+        =========================================== -->
+      <section id="comments" class="comment-section">
+        <div class="container">
+          <div class="reply-box">
+            <h3>Leave a Reply</h3>
+            <form class="comment-form">
+              <div class="form-group">
+                <label for="commentText">Comment</label>
+                <textarea id="commentText" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="commentName">Name</label>
+                <input type="text" id="commentName" required />
+              </div>
+              <button type="submit" class="btn-submit">Kirim Komentar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+         9. FOOTER
+    =========================================== -->
+    <footer id="kontak" class="main-footer">
+      <div class="container footer-grid">
+        <div class="footer-col-brand">
+          <img
+            src="assets/img/logo ukm pp.webp"
+            alt="Logo UKM PP"
+            class="footer-logo"
+          />
+          <h4>
+            UKM PENDIDIKAN DAN PENALARAN <br />
+            POLITEKNIK NEGERI MALANG
+          </h4>
+        </div>
+
+        <div class="footer-col-links">
+          <h4>Pintasan Halaman</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#reca">RECA</a></li>
+            <li><a href="#game">Game</a></li>
+            <li><a href="#lemari-karya">Lemari Karya</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-contact">
+          <h4>Hubungi Kami</h4>
+          <p>📷 Instagram: @ukmpp_polinema</p>
+          <p>📽️ YouTube: ukmpp_polinema</p>
+          <p>✉️ Email: ukmpp@polinema.ac.id</p>
+          <a
+            href="https://ukmpp.or.id/"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <p>🌐 Web: ukmpp.or.id</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Logic Insight - UKM Pendidikan dan Penalaran POLINEMA</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

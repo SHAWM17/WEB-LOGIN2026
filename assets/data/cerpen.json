@@ -1,0 +1,222 @@
+[
+  {
+    "id": "cerpen-01",
+    "judul": "Lembar yang Menjelma",
+    "penulis": "Kelompok 1",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Setelah kakeknya, Ki Sastro, dalang wayang beber terakhir di kampungnya, wafat, Gendhis menemukan kembali gulungan kisah Panji. Ia berusaha menyambungkan warisan dongeng dengan ilustrasi digital dan berdamai dengan masa lalu.",
+    "pdf_file": "assets/pdf/Kelompok 1_Lembar yang Menjelma_Logic Insight.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-02",
+    "judul": "Takdir yang Tidak Bisa Berubah",
+    "penulis": "Kelompok 2",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Raka menemukan peti kuno beraksara Sunda di loteng rumah kakeknya. Teka-teki di dalam peti mengajaknya memahami sejarah dan menerima bahwa masa lalu tidak selalu untuk diubah, melainkan untuk dipelajari.",
+    "pdf_file": "assets/pdf/Kelompok 2_Takdir Yang Tidak Bisa Berubah_Cerita Pendek Login 2026.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-03",
+    "judul": "Seribu Langkah Sean",
+    "penulis": "Kelompok 3",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Seorang mahasiswi mengenang kedekatannya dengan Sean, laki-laki yang menunjukkan cinta melalui perhatian kecil dan janji membangun seribu hal untuk membuatnya jatuh cinta. Kisah mereka berhenti sebelum benar-benar selesai, seperti candi keseribu dalam sebuah dongeng.",
+    "pdf_file": "assets/pdf/kelompok 3_SERIBU LANGKAH.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-04",
+    "judul": "Jaka Tarub dan Nawang Wulan",
+    "penulis": "Kelompok 4",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Jaka Tarub menemukan Nawang Wulan, sosok dari koloni luar angkasa yang terdampar di Bumi. Ketika rasa takut kehilangan membuat Jaka mengekang Nawang, ia belajar bahwa cinta bukan berarti merampas kebebasan orang yang disayangi.",
+    "pdf_file": "assets/pdf/kelompok 4_JAKA TARUB DAN NAWANG WULAN.docx.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-05",
+    "judul": "Fajar Buatan Keberanian Sejati",
+    "penulis": "Kelompok 5",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Kirana mempertanyakan legenda Roro Jonggrang dan seolah mengalami kisah itu dari dekat. Ia menemukan sisi lain dari sang putri yang selama ini disalahkan, lalu bertekad menuliskan kembali dongeng tersebut dengan lebih adil.",
+    "pdf_file": "assets/pdf/kelompok 5_Fajar Buatan Keberanian Sejati.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-06",
+    "judul": "Timun Mas dan Buto Tenggat",
+    "penulis": "Kelompok 6",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Seorang mahasiswa kewalahan menghadapi kuliah, organisasi, dan tenggat yang terus berdatangan hingga bayangan Buto Tenggat menghantuinya. Terinspirasi kisah Timun Mas, ia belajar menetapkan batas, memilih tanggung jawab, dan meminta bantuan.",
+    "pdf_file": "assets/pdf/Kelompok 6_Timun Mas dan Buto Tenggat_Logic Insight.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-07",
+    "judul": "Nanti, Bu",
+    "penulis": "Kelompok 7",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Damar sibuk mengejar kehidupan dan pekerjaan di kota, sementara panggilan serta pesan ibunya selalu dijawab dengan kata “nanti”. Sebuah pengalaman menyakitkan membuatnya memahami bahwa kesuksesan tidak seharusnya membuat seseorang terus menunda waktu bersama keluarga.",
+    "pdf_file": "assets/pdf/kelompok 7_NANTI, BU.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-08",
+    "judul": "Wabah Gaib di Desa Tanjungsari",
+    "penulis": "Kelompok 8",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Wabah misterius membuat warga Desa Tanjungsari ketakutan dan mengaitkan penyakit itu dengan hal gaib. Raka menyelidiki kejadian tersebut, menghadapi prasangka warga, dan belajar bahwa fakta dapat mengalahkan mitos.",
+    "pdf_file": "assets/pdf/kelompok 8_WABAH GAIB DI DESA TANJUNGSARI.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-09",
+    "judul": "Telaga yang Diam",
+    "penulis": "Kelompok 9",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Dayang Sumbi mengenali tanda bahwa Sangkuriang yang hendak melamarnya adalah anak yang pernah ia usir. Terjebak antara rasa malu dan kebenaran, ia harus mengambil keputusan sebelum fajar agar kisah mereka tidak berakhir menjadi tragedi.",
+    "pdf_file": "assets/pdf/kelompok 9_TELAGA YANG DIAM.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-10",
+    "judul": "Timun Mas: Empat Benda untuk Berlari",
+    "penulis": "Kelompok 10",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Mira, perempuan berusia dua puluh tahun yang tumbuh bersama dongeng Timun Mas, berjuang menghadapi tuntutan ibunya tentang masa depan. Kisah ini menafsirkan kembali empat benda ajaib sebagai lambang keberanian untuk memilih jalan hidup sendiri.",
+    "pdf_file": "assets/pdf/kelompok 10_TIMUN MAS.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-11",
+    "judul": "Empat Benda",
+    "penulis": "Kelompok 11",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Setelah neneknya meninggal, Keia menemukan empat benda warisan dan pesan agar tidak membuka pintu saat malam. Kedatangan sosok misterius mengungkap rahasia keluarga serta teror yang kembali mencari cucu perempuan pertama setiap dua puluh tahun.",
+    "pdf_file": "assets/pdf/Kelompok 11_Empat Benda.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-12",
+    "judul": "Penjaga Dongeng Terakhir",
+    "penulis": "Kelompok 12",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Usai neneknya meninggal, Raka mewarisi dongeng yang tidak pernah ditamatkan. Perjalanannya menuntun Raka memahami bahwa sebuah cerita tetap hidup bukan semata-mata karena akhirnya, melainkan karena ada orang yang mau meneruskannya.",
+    "pdf_file": "assets/pdf/kelompok 12_PENJAGA DONGENG TERAKHIR.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-14",
+    "judul": "Kendi dan Bumbu Warisan",
+    "penulis": "Kelompok 14",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Nining bekerja keras di warung peninggalan ibunya, sementara ibu tiri dan saudara tirinya menguasai hasil usaha itu. Berbekal ketekunan dan benda-benda warisan, ia mengungkap ketidakadilan serta mengubah warisan keluarga menjadi manfaat bagi desanya.",
+    "pdf_file": "assets/pdf/kelompok 14_CERPEN Kendi dan Bumbu Warisan.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-15",
+    "judul": "Tangisan yang Mengalir di Kali Mewek",
+    "penulis": "Kelompok 15",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Setelah bertengkar dengan ibunya, Akira melarikan diri ke Kali Mewek yang mulai mengering dan terseret ke masa legenda Ken Dedes dan Mpu Purwa. Pengalaman itu membuatnya memahami empati, kebebasan, dan pentingnya meminta maaf selagi masih ada kesempatan.",
+    "pdf_file": "assets/pdf/kelompok 15_KALI MEWEK.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-16",
+    "judul": "Candi ke Sembilan Ratus Sembilan Puluh Sembilan",
+    "penulis": "Kelompok 16",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Di masa depan berteknologi tinggi, Bandung Bondowoso membangun megapolis dengan mesin dan kecerdasan buatan, tetapi proyeknya berbenturan dengan kawasan budaya yang dijaga Roro Jonggrang. Cerita ini mempertanyakan kemajuan yang mengorbankan sejarah, alam, dan nurani.",
+    "pdf_file": "assets/pdf/kelompok 16_CANDI KE SEMBILAN RATUS SEMBILAN PULUH SEMBILAN.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-17",
+    "judul": "Gemuruh Dadak Merak",
+    "penulis": "Kelompok 17",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Nara menganggap Reog sebagai kesenian lama hingga tugas sekolah membawanya ke sanggar dan mempertemukannya dengan Mbah Wiryo. Dari sana, ia mengenal makna Dadak Merak dan menyadari pentingnya generasi muda menjaga budaya Ponorogo.",
+    "pdf_file": "assets/pdf/kelompok 17_GEMURUH DADAK MERAK.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-18",
+    "judul": "Kuda yang Membawa Pulang Ingatan",
+    "penulis": "Kelompok 18",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Raka menganggap Festival Kampoeng Dokar sebagai acara yang selalu sama, tetapi percakapan dengan kakeknya membawanya menelusuri sejarah dokar dan tradisi Dusun Banjar Tengah. Ia memahami bahwa tradisi adalah ingatan bersama yang perlu dirawat.",
+    "pdf_file": "assets/pdf/kelompok 18_Kuda yang Membawa Pulang Ingatan.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-19",
+    "judul": "Batu yang Retak di Subuh Hari",
+    "penulis": "Kelompok 19",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Arga tampak sukses dalam kariernya, tetapi ia terus menghindari pesan terakhir dari ibunya. Pertemuan dengan kenangan sederhana dari rumah membantunya menghadapi jarak emosional yang telah ia bangun dan mulai berdamai dengan masa lalu.",
+    "pdf_file": "assets/pdf/kelompok 19_Batu yang Retak di Subuh Hari.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-20",
+    "judul": "Cawan Pelangi dari Timur Sandyakala",
+    "penulis": "Kelompok 20",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Citra, mahasiswi kedokteran dari keluarga terpandang, ikut menjadi relawan di Nusa Tenggara Timur setelah bencana. Di tengah kerja kemanusiaan dan perjumpaannya dengan alam serta cerita rakyat setempat, ia mempertanyakan identitas, privilese, dan arti membantu sesama.",
+    "pdf_file": "assets/pdf/kelompok 20_Cawan Pelangi dari Timur Sandyakala.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-21",
+    "judul": "Mbah Boncolono: Pencuri atau Pahlawan?",
+    "penulis": "Kelompok 21",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Naya dan Raka mengangkat legenda Mbah Boncolono untuk tugas video, lalu mempertanyakan apakah ia sekadar pencuri atau sosok yang melawan ketidakadilan. Mereka menemukan makna keberanian dalam mengungkap kebenaran dan menolak untuk diam.",
+    "pdf_file": "assets/pdf/Kelompok 21_MBAH BONCOLONO_ PENCURI ATAU PAHLAWAN.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-22",
+    "judul": "Nama yang Ditulis Merah",
+    "penulis": "Kelompok 22",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Bawang Merah menceritakan hidupnya dari sudut pandangnya sendiri, melampaui label pemalas, iri, dan jahat yang melekat padanya. Ia berharap generasi berikutnya memahami bahwa seseorang tidak bisa disimpulkan hanya dari satu versi dongeng.",
+    "pdf_file": "assets/pdf/kelompok 22_Nama Yang Ditulis Merah.pdf",
+    "video_embed": ""
+  },
+  {
+    "id": "cerpen-23",
+    "judul": "Dirah",
+    "penulis": "Kelompok 23",
+    "kategori": "Loka Karya (Peserta)",
+    "kategori_slug": "peserta",
+    "sinopsis": "Bu Dirah dan putrinya, Manggali, menjadi sasaran stigma setelah kabar bahwa jamu mereka menyebabkan warga sakit menyebar lewat grup WhatsApp. Manggali mencari penyebab sebenarnya dan menghadapi bagaimana rumor dapat menyebar lebih cepat daripada fakta.",
+    "pdf_file": "assets/pdf/Kelompok 23_DIrah.pdf",
+    "video_embed": ""
+  }
+]
