@@ -158,9 +158,13 @@ function loadDataCerpen() {
     });
 }
 
-// 2. Update Informasi 6 Finalis (Juara 1-3 & Finalis 4-6)
+// Update Informasi 6 Finalis (Juara 1-3 & Finalis 4-6)
 function updateFinalisSection(data) {
+  // Filter khusus kategori_slug "finalis"
   const finalisData = data.filter((item) => item.kategori_slug === "finalis");
+
+  // Urutkan berdasarkan angka peringkat
+  finalisData.sort((a, b) => (a.peringkat || 99) - (b.peringkat || 99));
 
   finalisData.forEach((item, index) => {
     const idNum = String(index + 1).padStart(2, "0");
@@ -169,6 +173,32 @@ function updateFinalisSection(data) {
 
     if (titleEl) titleEl.innerText = item.judul;
     if (authorEl) authorEl.innerText = `"${item.penulis}"`;
+
+    // Ambil elemen card induk (baik Juara 1-3 maupun Finalis 4-6)
+    const cardEl = titleEl?.closest(".finalis-card, .finalis-sub-card");
+    if (cardEl) {
+      // 1. Update Thumbnail / Cover Image (Juara 1-3)
+      const videoPreview = cardEl.querySelector(".video-preview");
+      if (videoPreview) {
+        const defaultCover = "assets/img/header-reca.webp";
+        const coverSrc = item.cover_img || defaultCover;
+
+        // Atur Gambar Cover
+        videoPreview.innerHTML = `
+          <img src="${coverSrc}" alt="${item.judul}" />
+          ${item.video_embed ? '<div class="play-overlay">▶</div>' : ''}
+        `;
+
+        // Atur Event Click ke PDF / Video
+        videoPreview.setAttribute("onclick", `bukaPdfCerpen('${item.id}')`);
+      }
+
+      // 2. Update Tombol 'Baca Naskah'
+      const btnRead = cardEl.querySelector(".btn-read");
+      if (btnRead) {
+        btnRead.setAttribute("onclick", `bukaPdfCerpen('${item.id}')`);
+      }
+    }
   });
 }
 
@@ -234,48 +264,61 @@ function toggleLokaKaryaGrid() {
   container.classList.toggle("hidden");
 }
 
-// 5. Buka Modal PDF & Video Viewer
-function bukaPdfCerpen(id) {
-  const cerpen = dataCerpenGlobal.find((item) => item.id === id);
-  if (!cerpen) return;
+// Fungsi Buka Modal Pop-up PDF + Media Embed
+function bukaPdfCerpen(idCerpen) {
+  const item = dataCerpenGlobal.find((c) => c.id === idCerpen);
+  if (!item) return;
 
-  // Set Data Teks
-  document.getElementById("modalKategori").innerText = cerpen.kategori;
-  document.getElementById("modalJudul").innerText = cerpen.judul;
-  document.getElementById("modalPenulis").innerText = `Oleh: ${cerpen.penulis}`;
+  // 1. Set Informasi Teks Pop-up
+  document.getElementById("modalKategori").innerText = item.kategori || "Peserta";
+  document.getElementById("modalJudul").innerText = item.judul;
+  document.getElementById("modalPenulis").innerText = `Oleh: ${item.penulis}`;
 
-  // Set Path File PDF (#toolbar=1 untuk menampilkan tombol download/zoom)
-  document.getElementById("modalPdfFrame").src = cerpen.pdf_file + "#toolbar=1";
+  // 2. Element Media Wrapper & PDF Frame
+  const mediaWrapper = document.getElementById("modalVideoWrapper");
+  const mediaIframe = document.getElementById("modalVideoIframe");
+  const mediaTitle = mediaWrapper.querySelector("h4");
+  const pdfFrame = document.getElementById("modalPdfFrame");
 
-  // Set Video Embed (Jika Ada)
-  const videoWrapper = document.getElementById("modalVideoWrapper");
-  const videoIframe = document.getElementById("modalVideoIframe");
+  // 3. Cek apakah ada Media Embed (Video / Komik Strip)
+  if (item.media_embed || item.video_embed) {
+    const embedUrl = item.media_embed || item.video_embed;
+    
+    // Ubah judul bagian sesuai tipe media (Video atau Komik Strip)
+    if (item.media_type === "komik") {
+      mediaTitle.innerText = "🎨 Karya Komik Strip Finalis";
+    } else {
+      mediaTitle.innerText = "🎬 Video Unjuk Karya / Pembacaan Finalis";
+    }
 
-  if (cerpen.video_embed && cerpen.video_embed.trim() !== "") {
-    videoIframe.src = cerpen.video_embed;
-    videoWrapper.classList.remove("hidden");
+    // Ubah link Google Drive dari /view menjadi /preview agar bisa di-embed
+    const formattedEmbedUrl = embedUrl.replace(/\/view(\?usp=sharing)?$/, "/preview");
+    mediaIframe.src = formattedEmbedUrl;
+    
+    mediaWrapper.classList.remove("hidden");
   } else {
-    videoIframe.src = "";
-    videoWrapper.classList.add("hidden");
+    mediaIframe.src = "";
+    mediaWrapper.classList.add("hidden");
   }
 
-  // Tampilkan Modal & Kunci Scroll Layar
+  // 4. Set File PDF Naskah
+  pdfFrame.src = item.pdf_file || item.pdf_url || "";
+
+  // 5. Tampilkan Modal
   const modal = document.getElementById("pdfModal");
   modal.classList.remove("hidden");
   modal.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
 }
 
-// 6. Tutup Modal Reader
+// Fungsi Tutup Modal
 function closePdfModal() {
   const modal = document.getElementById("pdfModal");
   modal.classList.add("hidden");
   modal.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "auto";
 
-  // Reset iframe src agar video & pdf berhenti berputar di background
-  document.getElementById("modalPdfFrame").src = "";
+  // Hentikan pemutaran video/media saat modal ditutup
   document.getElementById("modalVideoIframe").src = "";
+  document.getElementById("modalPdfFrame").src = "";
 }
 
 // ==========================================

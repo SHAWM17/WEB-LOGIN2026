@@ -297,21 +297,17 @@
       =========================================== -->
       <div id="pdfModal" class="modal-overlay hidden" aria-hidden="true">
         <div class="modal-content">
+          <!-- Header Modal -->
           <div class="modal-header">
             <div class="modal-title-box">
               <span id="modalKategori" class="modal-badge">Kategori</span>
               <h3 id="modalJudul">Judul Cerpen</h3>
               <p id="modalPenulis" class="modal-author">Oleh: Penulis</p>
             </div>
-            <button
-              class="btn-close"
-              onclick="closePdfModal()"
-              aria-label="Tutup Viewer"
-            >
-              &times;
-            </button>
+            <button class="btn-close" onclick="closePdfModal()">&times;</button>
           </div>
 
+          <!-- 1. Media Embed (Tampil Paling Atas Jika Ada) -->
           <div id="modalVideoWrapper" class="modal-video-wrapper hidden">
             <h4>🎬 Video Unjuk Karya / Pembacaan Finalis</h4>
             <div class="video-container">
@@ -324,6 +320,7 @@
             </div>
           </div>
 
+          <!-- 2. Naskah PDF (Di Bawah Media) -->
           <div class="modal-pdf-wrapper">
             <h4>📜 Naskah Cerpen Lengkap</h4>
             <div class="pdf-container">
@@ -331,9 +328,10 @@
             </div>
           </div>
 
+          <!-- Footer Modal -->
           <div class="modal-footer">
             <button onclick="closePdfModal()" class="btn-secondary">
-              Tutup Naskah
+              Tutup
             </button>
           </div>
         </div>

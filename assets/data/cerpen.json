@@ -53,11 +53,13 @@
     "id": "cerpen-06",
     "judul": "Timun Mas dan Buto Tenggat",
     "penulis": "Kelompok 6",
-    "kategori": "Loka Karya (Peserta)",
-    "kategori_slug": "peserta",
+    "kategori": "Juara 5",
+    "kategori_slug": "finalis",
+    "peringkat": 5,
     "sinopsis": "Seorang mahasiswa kewalahan menghadapi kuliah, organisasi, dan tenggat yang terus berdatangan hingga bayangan Buto Tenggat menghantuinya. Terinspirasi kisah Timun Mas, ia belajar menetapkan batas, memilih tanggung jawab, dan meminta bantuan.",
     "pdf_file": "assets/pdf/Kelompok 6_Timun Mas dan Buto Tenggat_Logic Insight.pdf",
-    "video_embed": ""
+    "media_type": "komik",
+    "media_embed": "https://drive.google.com/file/d/1Xzja6j5eSFfocG_GTSZ6GF7C37ocE_OA/view?usp=sharing"
   },
   {
     "id": "cerpen-07",
@@ -83,11 +85,13 @@
     "id": "cerpen-09",
     "judul": "Telaga yang Diam",
     "penulis": "Kelompok 9",
-    "kategori": "Loka Karya (Peserta)",
-    "kategori_slug": "peserta",
+    "kategori": "Juara 6",
+    "kategori_slug": "finalis",
+    "peringkat": 6,
     "sinopsis": "Dayang Sumbi mengenali tanda bahwa Sangkuriang yang hendak melamarnya adalah anak yang pernah ia usir. Terjebak antara rasa malu dan kebenaran, ia harus mengambil keputusan sebelum fajar agar kisah mereka tidak berakhir menjadi tragedi.",
     "pdf_file": "assets/pdf/kelompok 9_TELAGA YANG DIAM.pdf",
-    "video_embed": ""
+    "media_type": "komik",
+    "media_embed": "https://drive.google.com/file/d/1sejjztgocXuJ49DDgycRoz_5DC0-yOAs/view?usp=sharing"
   },
   {
     "id": "cerpen-10",
@@ -113,11 +117,14 @@
     "id": "cerpen-12",
     "judul": "Penjaga Dongeng Terakhir",
     "penulis": "Kelompok 12",
-    "kategori": "Loka Karya (Peserta)",
-    "kategori_slug": "peserta",
+    "kategori": "Juara 3",
+    "kategori_slug": "finalis",
+    "peringkat": 3,
     "sinopsis": "Usai neneknya meninggal, Raka mewarisi dongeng yang tidak pernah ditamatkan. Perjalanannya menuntun Raka memahami bahwa sebuah cerita tetap hidup bukan semata-mata karena akhirnya, melainkan karena ada orang yang mau meneruskannya.",
     "pdf_file": "assets/pdf/kelompok 12_PENJAGA DONGENG TERAKHIR.pdf",
-    "video_embed": ""
+    "media_type": "komik",
+    "media_embed": "https://drive.google.com/file/d/19QrVWAUuyjt7oNBY9FGHAkkDQNSpOOih/view?usp=sharing",
+    "cover_img": "assets/img/cover-tim12.webp"
   },
   {
     "id": "cerpen-14",
@@ -133,11 +140,13 @@
     "id": "cerpen-15",
     "judul": "Tangisan yang Mengalir di Kali Mewek",
     "penulis": "Kelompok 15",
-    "kategori": "Loka Karya (Peserta)",
-    "kategori_slug": "peserta",
+    "kategori": "Juara 4",
+    "kategori_slug": "finalis",
+    "peringkat": 4,
     "sinopsis": "Setelah bertengkar dengan ibunya, Akira melarikan diri ke Kali Mewek yang mulai mengering dan terseret ke masa legenda Ken Dedes dan Mpu Purwa. Pengalaman itu membuatnya memahami empati, kebebasan, dan pentingnya meminta maaf selagi masih ada kesempatan.",
     "pdf_file": "assets/pdf/kelompok 15_KALI MEWEK.pdf",
-    "video_embed": ""
+    "media_type": "komik",
+    "media_embed": "https://drive.google.com/file/d/1mKMmBFHu5Y3mieCSn1Ah69D5xBkoq70x/view?usp=sharing"
   },
   {
     "id": "cerpen-16",
@@ -163,11 +172,14 @@
     "id": "cerpen-18",
     "judul": "Kuda yang Membawa Pulang Ingatan",
     "penulis": "Kelompok 18",
-    "kategori": "Loka Karya (Peserta)",
-    "kategori_slug": "peserta",
+    "kategori": "Juara 1",
+    "kategori_slug": "finalis",
+    "peringkat": 1,
     "sinopsis": "Raka menganggap Festival Kampoeng Dokar sebagai acara yang selalu sama, tetapi percakapan dengan kakeknya membawanya menelusuri sejarah dokar dan tradisi Dusun Banjar Tengah. Ia memahami bahwa tradisi adalah ingatan bersama yang perlu dirawat.",
     "pdf_file": "assets/pdf/kelompok 18_Kuda yang Membawa Pulang Ingatan.pdf",
-    "video_embed": ""
+    "media_type": "video",
+    "media_embed": "https://drive.google.com/file/d/12dadU7_r2vi0U8VH_T2WHVf32AoVQ0QC/view?usp=sharing",
+    "cover_img": "assets/img/cover-tim18.webp"
   },
   {
     "id": "cerpen-19",
@@ -203,11 +215,14 @@
     "id": "cerpen-22",
     "judul": "Nama yang Ditulis Merah",
     "penulis": "Kelompok 22",
-    "kategori": "Loka Karya (Peserta)",
-    "kategori_slug": "peserta",
+    "kategori": "Juara 2",
+    "kategori_slug": "finalis",
+    "peringkat": 2,
     "sinopsis": "Bawang Merah menceritakan hidupnya dari sudut pandangnya sendiri, melampaui label pemalas, iri, dan jahat yang melekat padanya. Ia berharap generasi berikutnya memahami bahwa seseorang tidak bisa disimpulkan hanya dari satu versi dongeng.",
     "pdf_file": "assets/pdf/kelompok 22_Nama Yang Ditulis Merah.pdf",
-    "video_embed": ""
+    "media_type": "komik",
+    "media_embed": "https://drive.google.com/file/d/1Caqj5--uvkEli4_yLX6VURPf8O0YaiOM/view?usp=sharing",
+    "cover_img": "assets/img/cover-tim22.webp"
   },
   {
     "id": "cerpen-23",

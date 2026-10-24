@@ -524,25 +524,28 @@ p {
   text-align: left;
 }
 
+/* Penyesuaian Preview Cover Komik Strip / Video Juara */
 .video-preview {
   position: relative;
   cursor: pointer;
   overflow: hidden;
   border-radius: var(--border-radius-sm);
+  background-color: #f1f5f9;
 }
 
 .video-preview img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
 }
 
 .video-preview:hover img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
+/* Play overlay hanya muncul jika ada video_embed */
 .play-overlay {
   position: absolute;
   top: 50%;
@@ -550,19 +553,22 @@ p {
   transform: translate(-50%, -50%);
   background-color: var(--color-golden-apricot);
   color: var(--color-white);
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  box-shadow: var(--shadow-sm);
-  transition: background-color 0.3s ease;
+  box-shadow: var(--shadow-md);
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .video-preview:hover .play-overlay {
   background-color: var(--color-dark-earth);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .finalis-info h4 {
