@@ -1030,6 +1030,58 @@ p {
   flex: 3;
 }
 
+/* ==========================================================================
+   STYLE KARYA ARTIKEL ILMIAH (LOKA KARYA STYLE)
+   ========================================================================== */
+
+.artikel-section {
+  padding: 40px 0;
+}
+
+.artikel-card-minimal {
+  background-color: #f8faf6; /* Warna latar bersih senada dengan Loka Karya */
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(40, 75, 56, 0.08);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.artikel-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1b3d2f;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.artikel-subtitle {
+  font-size: 1.05rem;
+  color: #4a5568;
+  margin-bottom: 1.8rem;
+  font-style: italic;
+}
+
+.artikel-card-minimal .btn-primary {
+  background-color: #d99a4e; /* Warna oranye/cokelat keemasan sesuai tombol Loka Karya */
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(217, 154, 78, 0.25);
+}
+
+.artikel-card-minimal .btn-primary:hover {
+  background-color: #c4863c;
+  transform: translateY(-2px);
+}
+
 .prestasi-section {
   text-align: center;
   margin-top: 3rem;
@@ -1281,5 +1333,17 @@ p {
 
   .pdf-container {
     height: 380px;
+  }
+
+  .artikel-card {
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .artikel-cover {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 240px;
   }
 }

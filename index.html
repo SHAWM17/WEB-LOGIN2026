@@ -538,6 +538,59 @@
             </div>
           </div>
 
+          <!-- ==========================================================================
+     SEGMEN KARYA ARTIKEL ILMIAH (MINIMALIS KARTU / LOKA KARYA STYLE)
+     ========================================================================== -->
+          <section id="artikel-ilmiah" class="artikel-section">
+            <div class="container">
+              <div class="artikel-card-minimal">
+                <h3 class="artikel-title">KARYA ARTIKEL ILMIAH</h3>
+                <p id="artikelDeskripsi" class="artikel-subtitle">
+                  "Kompilasi Tulis & Gagasan Ilmiah UKM Pendidikan dan
+                  Penalaran"
+                </p>
+                <button class="btn-primary" onclick="bukaModalArtikel()">
+                  Baca Seluruh Karya
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- MODAL POPUP ARTIKEL ILMIAH -->
+          <div
+            id="artikelModal"
+            class="modal-overlay hidden"
+            aria-hidden="true"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title-box">
+                  <span class="modal-badge">Artikel Ilmiah</span>
+                  <h3 id="modalArtikelJudul">Artikel Ilmiah</h3>
+                </div>
+                <button class="btn-close" onclick="tutupModalArtikel()">
+                  &times;
+                </button>
+              </div>
+
+              <div class="modal-pdf-wrapper">
+                <div class="pdf-container">
+                  <iframe
+                    id="modalArtikelPdfFrame"
+                    src=""
+                    type="application/pdf"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button onclick="tutupModalArtikel()" class="btn-secondary">
+                  Tutup
+                </button>
+              </div>
+            </div>
+          </div>
+
           <!-- Section Prestasi -->
           <div class="prestasi-section text-center">
             <h3>WIRAKRAMA REKSA</h3>

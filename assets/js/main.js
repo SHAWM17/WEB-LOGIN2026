@@ -186,7 +186,7 @@ function updateFinalisSection(data) {
         // Atur Gambar Cover
         videoPreview.innerHTML = `
           <img src="${coverSrc}" alt="${item.judul}" />
-          ${item.video_embed ? '<div class="play-overlay">▶</div>' : ''}
+          ${item.video_embed ? '<div class="play-overlay">▶</div>' : ""}
         `;
 
         // Atur Event Click ke PDF / Video
@@ -270,7 +270,8 @@ function bukaPdfCerpen(idCerpen) {
   if (!item) return;
 
   // 1. Set Informasi Teks Pop-up
-  document.getElementById("modalKategori").innerText = item.kategori || "Peserta";
+  document.getElementById("modalKategori").innerText =
+    item.kategori || "Peserta";
   document.getElementById("modalJudul").innerText = item.judul;
   document.getElementById("modalPenulis").innerText = `Oleh: ${item.penulis}`;
 
@@ -283,7 +284,7 @@ function bukaPdfCerpen(idCerpen) {
   // 3. Cek apakah ada Media Embed (Video / Komik Strip)
   if (item.media_embed || item.video_embed) {
     const embedUrl = item.media_embed || item.video_embed;
-    
+
     // Ubah judul bagian sesuai tipe media (Video atau Komik Strip)
     if (item.media_type === "komik") {
       mediaTitle.innerText = "🎨 Karya Komik Strip Finalis";
@@ -292,9 +293,12 @@ function bukaPdfCerpen(idCerpen) {
     }
 
     // Ubah link Google Drive dari /view menjadi /preview agar bisa di-embed
-    const formattedEmbedUrl = embedUrl.replace(/\/view(\?usp=sharing)?$/, "/preview");
+    const formattedEmbedUrl = embedUrl.replace(
+      /\/view(\?usp=sharing)?$/,
+      "/preview",
+    );
     mediaIframe.src = formattedEmbedUrl;
-    
+
     mediaWrapper.classList.remove("hidden");
   } else {
     mediaIframe.src = "";
@@ -444,3 +448,54 @@ function pilihBidang(nomorBidang) {
     viewContainer.style.opacity = "1";
   }, 150);
 }
+
+// Variable Global untuk menyimpan data artikel
+let dataArtikelGlobal = null;
+
+// Load Data artikel.json
+async function loadArtikelIlmiahData() {
+  try {
+    const response = await fetch("assets/data/artikel.json");
+    if (!response.ok) throw new Error("Gagal memuat artikel.json");
+
+    dataArtikelGlobal = await response.json();
+
+    if (dataArtikelGlobal) {
+      const deskripsiEl = document.getElementById("artikelDeskripsi");
+      if (deskripsiEl && dataArtikelGlobal.deskripsi) {
+        deskripsiEl.innerText = `"${dataArtikelGlobal.deskripsi}"`;
+      }
+    }
+  } catch (error) {
+    console.error("Error loading artikel data:", error);
+  }
+}
+
+// Fungsi Modal
+function bukaModalArtikel() {
+  if (!dataArtikelGlobal || !dataArtikelGlobal.pdf_file) return;
+
+  const modal = document.getElementById("artikelModal");
+  const modalJudul = document.getElementById("modalArtikelJudul");
+  const iframePdf = document.getElementById("modalArtikelPdfFrame");
+
+  if (modalJudul)
+    modalJudul.innerText = dataArtikelGlobal.judul || "Karya Artikel Ilmiah";
+  if (iframePdf) iframePdf.src = dataArtikelGlobal.pdf_file;
+
+  modal.classList.remove("hidden");
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function tutupModalArtikel() {
+  const modal = document.getElementById("artikelModal");
+  const iframePdf = document.getElementById("modalArtikelPdfFrame");
+
+  modal.classList.add("hidden");
+  modal.setAttribute("aria-hidden", "true");
+  if (iframePdf) iframePdf.src = "";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadArtikelIlmiahData();
+});
