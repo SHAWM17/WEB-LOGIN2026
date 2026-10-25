@@ -335,7 +335,7 @@ const dataBidang = {
     nama: "Bidang 1: Operasional Intern",
     fotoUtama: "assets/img/DOKUM-BIDANG/bidang1-sc.webp",
     deskripsi:
-      "Mengembangkan potensi nalar, iklim ilmiah, dan budaya kepenulisan mahasiswa melalui berbagai kompetisi, pelatihan, serta pendampingan karya cipta.",
+      "Bidang ini bertugas memastikan fondasi internal tetap kokoh dan operasional berjalan optimal. Ruang lingkup pergerakannya mencakup pengelolaan urusan rumah tangga organisasi, orientasi dan kaderisasi, hingga peningkatan kapasitas fungsionaris melalui program pendidikan, pelatihan, pembinaan, serta pengawasan anggota secara berkelanjutan.",
     proker: [
       {
         nama: "HARI ULANG TAHUN UKMPP",
@@ -357,10 +357,10 @@ const dataBidang = {
     ],
   },
   2: {
-    nama: "Bidang 2: Diskusi Dan Penalaran",
+    nama: "Bidang 2: Diskusi dan Penalaran",
     fotoUtama: "assets/img/DOKUM-BIDANG/bidang2-sc.webp",
     deskripsi:
-      "Fokus pada pengkaderan, pemeliharaan loyalitas fungsionaris, serta peningkatan kapasitas kepemimpinan dan manajemen organisasi secara berkelanjutan.",
+      "Ruang bagi para anggota untuk mengasah ketajaman logika dan kecakapan berkomunikasi. Melalui ruang lingkup diskusi dan pengembangan pola pikir ilmiah, kami melatih diri untuk berpikir secara kritis. Fokus kegiatan pada bidang ini juga mencakup tahap survei serta perencanaan penelitian ilmiah sebagai dasar yang kuat dalam merumuskan argumentasi yang berbobot.",
     proker: [
       {
         nama: "FORUM DISKUSI ILMIAH",
@@ -377,10 +377,10 @@ const dataBidang = {
     ],
   },
   3: {
-    nama: "Bidang 3: Penelitian Dan Pengembangan Teknologi",
+    nama: "Bidang 3: Penelitian dan Pengembangan Teknologi",
     fotoUtama: "assets/img/DOKUM-BIDANG/bidang3-sc.webp",
     deskripsi:
-      "Membangun jaring relasi strategis dengan pihak eksternal, alumni, UKM sejenis, serta mengelola pengabdian masyarakat berbasis penalaran.",
+      "Sebagai penggerak inovasi organisasi, ruang lingkup bidang ini berfokus langsung pada eksekusi penelitian ilmiah dan pengembangan teknologi. Melalui eksplorasi riset yang mendalam dan terarah, kami memastikan bahwa setiap gagasan serta karya yang lahir senantiasa relevan dengan perkembangan zaman dan mampu menjawab tantangan di masyarakat.",
     proker: [
       {
         nama: "TECHNO FAIR AND SEMINAR",
@@ -396,7 +396,7 @@ const dataBidang = {
     nama: "Bidang 4: Hubungan Masyarakat",
     fotoUtama: "assets/img/DOKUM-BIDANG/bidang4-sc.webp",
     deskripsi:
-      "Mengelola media komunikasi visual, dokumentasi kegiatan, publikasi majalah/jurnal, serta memproduksi konten kreatif resmi UKM PP.",
+      "Bidang ini berfokus pada pembangunan sinergi strategis dan memperluas jejaring kolaborasi dengan pihak eksternal. Ruang lingkup bidang ini berfokus pada publikasi dan sosialisasi ilmiah, serta program hubungan dan pengabdian masyarakat, guna memastikan setiap inovasi dan kontribusi nyata dari UKM PP dapat tersampaikan serta dirasakan langsung oleh khalayak luas.",
     proker: [
       {
         nama: "POLINEMA ESSAY COMPETITION",
