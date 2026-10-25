@@ -383,7 +383,7 @@ const dataBidang = {
       "Sebagai penggerak inovasi organisasi, ruang lingkup bidang ini berfokus langsung pada eksekusi penelitian ilmiah dan pengembangan teknologi. Melalui eksplorasi riset yang mendalam dan terarah, kami memastikan bahwa setiap gagasan serta karya yang lahir senantiasa relevan dengan perkembangan zaman dan mampu menjawab tantangan di masyarakat.",
     proker: [
       {
-        nama: "TECHNO FAIR AND SEMINAR",
+        nama: "<em>TECHNO FAIR AND</em> SEMINAR",
         foto: "assets/img/DOKUM-BIDANG/tfs.webp",
       },
       {
@@ -399,10 +399,10 @@ const dataBidang = {
       "Bidang ini berfokus pada pembangunan sinergi strategis dan memperluas jejaring kolaborasi dengan pihak eksternal. Ruang lingkup bidang ini berfokus pada publikasi dan sosialisasi ilmiah, serta program hubungan dan pengabdian masyarakat, guna memastikan setiap inovasi dan kontribusi nyata dari UKM PP dapat tersampaikan serta dirasakan langsung oleh khalayak luas.",
     proker: [
       {
-        nama: "POLINEMA ESSAY COMPETITION",
+        nama: "POLINEMA <em>ESSAY COMPETITION</em>",
         foto: "assets/img/DOKUM-BIDANG/pec.webp",
       },
-      { nama: "LOGIC INSIGHT", foto: "assets/img/desain-reca.webp" },
+      { nama: "<em>LOGIC INSIGHT</em>", foto: "assets/img/desain-reca.webp" },
       { nama: "KELEMBAGAAN", foto: "assets/img/DOKUM-BIDANG/kelembagaan.webp" },
       { nama: "MEDIA SOSIAL", foto: "assets/img/DOKUM-BIDANG/sosmed.webp" },
     ],
