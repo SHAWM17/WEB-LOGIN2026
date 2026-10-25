@@ -455,7 +455,7 @@ let dataArtikelGlobal = null;
 // Load Data artikel.json
 async function loadArtikelIlmiahData() {
   try {
-    const response = await fetch("data/artikel.json");
+    const response = await fetch("assets/data/artikel.json");
     if (!response.ok) throw new Error("Gagal memuat artikel.json");
 
     dataArtikelGlobal = await response.json();
