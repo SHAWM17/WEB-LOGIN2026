@@ -383,7 +383,7 @@ const dataBidang = {
       "Sebagai penggerak inovasi organisasi, ruang lingkup bidang ini berfokus langsung pada eksekusi penelitian ilmiah dan pengembangan teknologi. Melalui eksplorasi riset yang mendalam dan terarah, kami memastikan bahwa setiap gagasan serta karya yang lahir senantiasa relevan dengan perkembangan zaman dan mampu menjawab tantangan di masyarakat.",
     proker: [
       {
-        nama: "<em>TECHNO FAIR AND</em> SEMINAR",
+        nama: "<i>TECHNO FAIR AND</i> SEMINAR",
         foto: "assets/img/DOKUM-BIDANG/tfs.webp",
       },
       {
@@ -399,10 +399,10 @@ const dataBidang = {
       "Bidang ini berfokus pada pembangunan sinergi strategis dan memperluas jejaring kolaborasi dengan pihak eksternal. Ruang lingkup bidang ini berfokus pada publikasi dan sosialisasi ilmiah, serta program hubungan dan pengabdian masyarakat, guna memastikan setiap inovasi dan kontribusi nyata dari UKM PP dapat tersampaikan serta dirasakan langsung oleh khalayak luas.",
     proker: [
       {
-        nama: "POLINEMA <em>ESSAY COMPETITION</em>",
+        nama: "POLINEMA <i>ESSAY COMPETITION</i>",
         foto: "assets/img/DOKUM-BIDANG/pec.webp",
       },
-      { nama: "<em>LOGIC INSIGHT</em>", foto: "assets/img/desain-reca.webp" },
+      { nama: "<i>LOGIC INSIGHT</i>", foto: "assets/img/desain-reca.webp" },
       { nama: "KELEMBAGAAN", foto: "assets/img/DOKUM-BIDANG/kelembagaan.webp" },
       { nama: "MEDIA SOSIAL", foto: "assets/img/DOKUM-BIDANG/sosmed.webp" },
     ],
@@ -455,15 +455,21 @@ let dataArtikelGlobal = null;
 // Load Data artikel.json
 async function loadArtikelIlmiahData() {
   try {
-    const response = await fetch("assets/data/artikel.json");
+    const response = await fetch("data/artikel.json");
     if (!response.ok) throw new Error("Gagal memuat artikel.json");
 
     dataArtikelGlobal = await response.json();
 
     if (dataArtikelGlobal) {
+      const judulEl = document.getElementById("modalArtikelJudul");
       const deskripsiEl = document.getElementById("artikelDeskripsi");
+
+      // Ubah dari innerText ke innerHTML agar tag <i> terdeteksi
+      if (judulEl && dataArtikelGlobal.judul) {
+        judulEl.innerHTML = dataArtikelGlobal.judul;
+      }
       if (deskripsiEl && dataArtikelGlobal.deskripsi) {
-        deskripsiEl.innerText = `"${dataArtikelGlobal.deskripsi}"`;
+        deskripsiEl.innerHTML = `"${dataArtikelGlobal.deskripsi}"`;
       }
     }
   } catch (error) {
