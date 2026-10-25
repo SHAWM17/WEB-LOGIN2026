@@ -1094,6 +1094,137 @@ p {
 }
 
 /* ==========================================================================
+   CAROUSEL WIRAKRAMA REKSA (PRESTASI FUNGSIONARIS)
+   ========================================================================== */
+
+.wirakrama-section {
+  padding: 50px 0;
+}
+
+.wirakrama-header {
+  margin-bottom: 2rem;
+}
+
+.wirakrama-header h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1b3d2f;
+  letter-spacing: 0.5px;
+}
+
+.wirakrama-header .subtitle {
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+/* Wrapper & Navigasi */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-track-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 10px 0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+/* Card Bingkai Desain */
+.prestasi-card {
+  /* Default Desktop: 2 Card (50% per card) */
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.prestasi-frame {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(40, 75, 56, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prestasi-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.prestasi-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Tombol Panah Navigasi */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  color: #1b3d2f;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #d99a4e;
+  color: #ffffff;
+}
+
+.prev-btn {
+  left: -20px;
+}
+
+.next-btn {
+  right: -20px;
+}
+
+/* Dots Indicator */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background-color: #d99a4e;
+  width: 24px;
+  border-radius: 5px;
+}
+
+/* ==========================================================================
    10. LEAVE A REPLY (KOMENTAR)
    ========================================================================== */
 .comment-section {
@@ -1348,5 +1479,18 @@ p {
     flex: 0 0 auto;
     width: 100%;
     max-width: 240px;
+  }
+
+  .prestasi-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .prev-btn {
+    left: -10px;
+  }
+
+  .next-btn {
+    right: -10px;
   }
 }

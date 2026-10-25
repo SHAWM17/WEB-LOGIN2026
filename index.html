@@ -552,8 +552,7 @@
               <div class="artikel-card-minimal">
                 <h3 class="artikel-title">KARYA ARTIKEL ILMIAH</h3>
                 <p id="artikelDeskripsi" class="artikel-subtitle">
-                  "Kumpulan Karya Artikel Ilmiah UKM Pendidikan dan
-                  Penalaran"
+                  "Kumpulan Karya Artikel Ilmiah UKM Pendidikan dan Penalaran"
                 </p>
                 <button class="btn-primary" onclick="bukaModalArtikel()">
                   Baca Seluruh Karya
@@ -602,6 +601,46 @@
             <h3>WIRAKRAMA REKSA</h3>
             <p class="sub-text">Galeri Pencapaian & Prestasi UKM PP</p>
           </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+     SEGMEN WIRAKRAMA REKSA (CAROUSEL PRESTASI FUNGSIONARIS)
+     ========================================================================== -->
+      <section id="wirakrama-reksa" class="wirakrama-section">
+        <div class="container">
+          <div class="wirakrama-header text-center">
+            <h2>WIRAKRAMA REKSA</h2>
+            <p class="subtitle">Galeri Pencapaian & Prestasi UKM PP</p>
+          </div>
+
+          <!-- Carousel Container -->
+          <div class="carousel-wrapper">
+            <button
+              class="carousel-btn prev-btn"
+              onclick="moveSlide(-1)"
+              aria-label="Previous Slide"
+            >
+              ❮
+            </button>
+
+            <div class="carousel-track-container">
+              <div id="prestasiTrack" class="carousel-track">
+                <!-- Card Prestasi akan di-render secara dinamis dari prestasi.json oleh JS -->
+              </div>
+            </div>
+
+            <button
+              class="carousel-btn next-btn"
+              onclick="moveSlide(1)"
+              aria-label="Next Slide"
+            >
+              ❯
+            </button>
+          </div>
+
+          <!-- Indicator Dots -->
+          <div id="carouselDots" class="carousel-dots"></div>
         </div>
       </section>
 

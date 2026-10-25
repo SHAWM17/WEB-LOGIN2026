@@ -1,0 +1,37 @@
+[
+  {
+    "id": "prestasi-01",
+    "judul": "Silver Medal 1 PENA Essay Competition 2026",
+    "penyelenggara": "Universitas Dhyana Pura",
+    "tim": "Salbila Dwi Juniar, Nabila Nurfayza, Thoriq Umar Raissa, Nabilul Ilmi",
+    "gambar": "assets/img/prestasi/prestasi1.webp"
+  },
+  {
+    "id": "prestasi-02",
+    "judul": "Juara 1 LKTIN National Scientific Fair",
+    "penyelenggara": "Universitas Negeri Malang",
+    "tim": "Tim Fungsionaris UKM PP",
+    "gambar": "assets/img/prestasi/prestasi2.webp"
+  },
+  {
+    "id": "prestasi-03",
+    "judul": "Gold Medal Innovation Essay Contest",
+    "penyelenggara": "Politeknik Negeri Malang",
+    "tim": "Tim Fungsionaris UKM PP",
+    "gambar": "assets/img/prestasi/prestasi3.webp"
+  },
+  {
+    "id": "prestasi-04",
+    "judul": "Gold Medal Innovation Essay Contest",
+    "penyelenggara": "Politeknik Negeri Malang",
+    "tim": "Tim Fungsionaris UKM PP",
+    "gambar": "assets/img/prestasi/prestasi4.webp"
+  },
+  {
+    "id": "prestasi-05",
+    "judul": "Gold Medal Innovation Essay Contest",
+    "penyelenggara": "Politeknik Negeri Malang",
+    "tim": "Tim Fungsionaris UKM PP",
+    "gambar": "assets/img/prestasi/prestasi5.webp"
+  }
+]

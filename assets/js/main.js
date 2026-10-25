@@ -505,3 +505,117 @@ function tutupModalArtikel() {
 document.addEventListener("DOMContentLoaded", () => {
   loadArtikelIlmiahData();
 });
+
+// wirakrama reksa
+let currentSlideIndex = 0;
+let dataPrestasiGlobal = [];
+
+// Load Data prestasi.json
+async function loadPrestasiData() {
+  try {
+    const response = await fetch("assets/data/prestasi.json");
+    if (!response.ok) throw new Error("Gagal memuat prestasi.json");
+
+    dataPrestasiGlobal = await response.json();
+    renderPrestasiCards(dataPrestasiGlobal);
+    updateCarouselPosition();
+  } catch (error) {
+    console.error("Error loading prestasi data:", error);
+  }
+}
+
+// Render Card Bingkai Prestasi
+function renderPrestasiCards(data) {
+  const track = document.getElementById("prestasiTrack");
+  const dotsContainer = document.getElementById("carouselDots");
+  if (!track) return;
+
+  track.innerHTML = "";
+  if (dotsContainer) dotsContainer.innerHTML = "";
+
+  data.forEach((item, index) => {
+    const card = document.createElement("div");
+    card.className = "prestasi-card";
+    card.innerHTML = `
+      <div class="prestasi-frame">
+        <img src="${item.gambar}" alt="${item.judul}" loading="lazy" />
+      </div>
+    `;
+    track.appendChild(card);
+  });
+
+  // Hitung jumlah dots berdasarkan ukuran layar
+  createCarouselDots();
+}
+
+function getCardsPerView() {
+  return window.innerWidth <= 768 ? 1 : 2;
+}
+
+function getMaxIndex() {
+  const cardsPerView = getCardsPerView();
+  return Math.max(0, dataPrestasiGlobal.length - cardsPerView);
+}
+
+function createCarouselDots() {
+  const dotsContainer = document.getElementById("carouselDots");
+  if (!dotsContainer) return;
+  dotsContainer.innerHTML = "";
+
+  const maxIndex = getMaxIndex();
+  for (let i = 0; i <= maxIndex; i++) {
+    const dot = document.createElement("span");
+    dot.className = `dot ${i === currentSlideIndex ? "active" : ""}`;
+    dot.onclick = () => jumpToSlide(i);
+    dotsContainer.appendChild(dot);
+  }
+}
+
+function moveSlide(direction) {
+  const maxIndex = getMaxIndex();
+  currentSlideIndex += direction;
+
+  if (currentSlideIndex < 0) {
+    currentSlideIndex = maxIndex;
+  } else if (currentSlideIndex > maxIndex) {
+    currentSlideIndex = 0;
+  }
+
+  updateCarouselPosition();
+}
+
+function jumpToSlide(index) {
+  currentSlideIndex = index;
+  updateCarouselPosition();
+}
+
+function updateCarouselPosition() {
+  const track = document.getElementById("prestasiTrack");
+  if (!track || dataPrestasiGlobal.length === 0) return;
+
+  const cardsPerView = getCardsPerView();
+  // Hitung pergeseran persentase berdasarkan jumlah card per tampilan
+  const cardWidthPercent = 100 / cardsPerView;
+  const translateX = -(currentSlideIndex * cardWidthPercent);
+
+  track.style.transform = `translateX(${translateX}%)`;
+
+  // Update Tampilan Dots
+  const dots = document.querySelectorAll(".carousel-dots .dot");
+  dots.forEach((dot, idx) => {
+    dot.classList.toggle("active", idx === currentSlideIndex);
+  });
+}
+
+// Handler saat layar di-resize agar slider menyesuaikan jumlah card
+window.addEventListener("resize", () => {
+  if (currentSlideIndex > getMaxIndex()) {
+    currentSlideIndex = getMaxIndex();
+  }
+  createCarouselDots();
+  updateCarouselPosition();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadPrestasiData();
+});
