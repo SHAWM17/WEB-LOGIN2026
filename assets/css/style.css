@@ -488,9 +488,13 @@ p {
 }
 
 .section-tagline {
-  font-style: italic;
+  font-style: normal;
   color: var(--color-ocean-patina);
   margin-bottom: 3rem;
+}
+
+.section-tagline span {
+  font-style: italic;
 }
 
 .mustika-acarita {

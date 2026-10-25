@@ -404,7 +404,7 @@ const dataBidang = {
       },
       { nama: "LOGIC INSIGHT", foto: "assets/img/desain-reca.webp" },
       { nama: "KELEMBAGAAN", foto: "assets/img/DOKUM-BIDANG/kelembagaan.webp" },
-      { nama: "SOSIAL MEDIA", foto: "assets/img/DOKUM-BIDANG/sosmed.webp" },
+      { nama: "MEDIA SOSIAL", foto: "assets/img/DOKUM-BIDANG/sosmed.webp" },
     ],
   },
 };
